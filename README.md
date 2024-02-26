@@ -3,7 +3,7 @@ Before starting, all the credits goes to the original repository [made by Maximi
 This resource is completely **standalone** so there's no required framework for this script.
 
 ## 👀 Preview
-https://youtu.be/nxUvx0bloYM
+https://youtu.be/xLm6eimgI6o
 
 ## 🤝 Support
 - [Documentation Page](https://five-developments.gitbook.io/scripts/scripts/five-repairkit/setup)
