@@ -1,5 +1,5 @@
 RegisterCommand('testrepairkit', function() 
-    local minigame = exports["five-lockpick"]:Minigame()
+    local minigame = exports["five-repairkit"]:Minigame()
     if minigame then 
         print('User won the minigame')
     else
