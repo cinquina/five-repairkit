@@ -1,0 +1,122 @@
+body {
+    font-family: 'Gilroy';
+    overflow: hidden;
+    position: relative; 
+    transform: scale(0.65)
+}
+
+.hacking-container {
+    display: none;
+    position: relative;
+    align-items: center;
+    background: linear-gradient(to right, rgb(18, 19, 20), rgb(36, 68, 90));
+    padding: 1.5%;
+    border-radius: 10px;
+    width: 800px;
+    height: 50px;
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button-press {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 2px;
+    background: radial-gradient(circle, rgb(0, 183, 140), rgb(0, 81, 61));
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
+    color: white;
+    bottom: 53px;
+}
+
+.timeline {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 730px;
+    height: 60px;
+    margin-left: 70px;
+    border-radius: 5px;
+    outline: 2px solid rgba(128, 128, 128, 0.162);
+}
+
+.moving-square{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    background: radial-gradient(circle, rgb(0, 255, 200), rgb(0, 174, 130));
+    box-shadow: 0 0 5px 0px rgb(16, 239, 191);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
+    color: white;
+    margin-left: 1%;
+    transition: margin-left 0.05s linear, scale 0.3s ease-in-out;
+}
+
+.square-slot {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    outline: 1.5px solid rgba(128, 128, 128, 0.354);
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+    margin-left: 15%; /* Ranges from 15-94% when randomizing */
+}
+
+.square-slot::before,
+.square-slot::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background: var(--background-gradient);
+}
+
+.square-slot::before {
+  top: -2px; /* Adjust the margin-top as needed */
+}
+
+.square-slot::after {
+  bottom: -2px; /* Adjust the margin-bottom as needed */
+}
+
+.other-container {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  gap: 10px;
+  margin-top: 10px;
+}
+.home-button {
+  background-color: rgb(84, 255, 164);
+  border-radius: 100px;
+  box-shadow: 0 0 3px rgb(127, 255, 191);
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.home-button:hover {
+  box-shadow: rgba(127, 255, 191, 0.397) 0 -25px 18px -14px inset,rgba(127, 255, 191, 0.397) 0 1px 2px,rgba(127, 255, 191, 0.397) 0 2px 4px,rgba(127, 255, 191, 0.397) 0 4px 8px,rgba(127, 255, 191, 0.397) 0 8px 16px,rgba(127, 255, 191, 0.397) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
